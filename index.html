@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Sistema Modelo</title>
+  </head>
+    <script>
+        $(document).ready(function() {
+            $("#flip").click(function() {
+                $("#panel").slideToggle("slow");
+            });
+
+            $("#flip_2").click(function() {
+                $("#panel_2").slideToggle("slow");
+            });
+        });
+    </script>
+  <body>
+
+      <!--Containar Principal -->
+    <div class="container dados">
+        <div class="row mt-5 usuario">
+            <h1 class="bg-dark text-light text-center" style="padding: 5px;">Bem-vindo USUÁRIO</h1>
+        </div>
+        <div class="row mt-1">
+            <div id="flip" class="rounded border border-2 border-dark border-top-0 border-start-0 bg-primary bg-gradient text-light">
+                Mostrar/Ocultar Informações do Cliente/Paciente
+            </div>
+        
+            <div class="mt-3 painel_info border rounded-1" id="panel">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            <span class="fw-bold">Nome:</span> Teste
+                        </div>
+                        <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            <span class="fw-bold">Endereço:</span> Rua Teste, 123
+                        </div>
+                        <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            <span class="fw-bold">Cidade:</span> Caxias do Sul
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row mt-3 mb-2">
+    
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+              <div class="box div_valor text_total text-center border border-warning border-2">
+                Valor Total<br>R$ 400,00
+              </div>
+            </div>
+            
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+              <div class="box div_valor text-center border border-success border-2">
+                Valor pago<br>R$ 100,00
+              </div>
+            </div>
+            
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+              <div class="box div_valor text-center  border border-danger border-2 ">
+                Valor a pagar<br>R$ 300,00
+              </div>
+            </div>
+            
+        </div> <!-- fim da linha -->
+
+        <div class="row mt-3 mb-2">
+            <div class="progress">
+                <div class="progress-bar  progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+        </div>
+        
+
+        <div class="row mt-3 mb-3">
+
+            <div id="flip_2" class="rounded border border-2 border-dark border-top-0 border-start-0  bg-primary bg-gradient text-light mb-3">
+                Mostrar/Ocultar Lista
+            </div>
+
+            <div class="mt-3 mb-2" id="panel_2">
+                <ol class="list-group"> <!-- lista ordenada --->
+                    <li class="list-group-item">
+                        <div class="ms-2 me-auto">
+                        <div class="fw-bold">Cirugia R$ 300,00</div>
+                        Descricao do que foi feito....
+                        </div>
+                    </li>
+                    <li class="list-group-item ">
+                        <div class="ms-2 me-auto">
+                        <div class="fw-bold">Remédio 1 R$ 50,00</div>
+                        Descricao do que foi feito....
+                        </div>
+                    </li>
+                    <li class="list-group-item  ">
+                        <div class="ms-2 me-auto">
+                        <div class="fw-bold">Remédio 2 R$ 50,00</div>
+                        Descricao do que foi feito....
+                        </div>
+                    </li>
+                </ol>
+            </div>  
+
+        </div> <!-- fim da linha -->
+        
+     
+    </div> <!-- fim do container-->
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  </body>
+</html>
+   
+
