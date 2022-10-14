@@ -41,8 +41,10 @@ body{
 
 .div_valor{
     background-color: #ffffff;
-    
+}
 
+.div_valor:hover{
+    box-shadow: 2px 2px;
 }
 
 .text_total{
