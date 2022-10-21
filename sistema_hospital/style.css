@@ -26,6 +26,8 @@ body{
     /* background-color: #BEE5F3!important; */
     color: #fff!important;
     box-shadow: 1px 1px #000;
+    background-color: #ccc;
+    cursor: pointer;
 
 }
 
@@ -34,7 +36,7 @@ body{
     padding: 0px;
 }
 
-.usuario{
+.dados > .usuario{
    height: auto;
 }
 
