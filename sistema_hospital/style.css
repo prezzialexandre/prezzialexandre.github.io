@@ -3,11 +3,12 @@
 }
 body{
     background-color: #ccc;
+    margin: 0px;
+    padding: 0px;
 }
 .dados{
     background-color: #fff;
 }
-
 
 #flip, #flip_2 {
         padding: 5px;
@@ -18,8 +19,6 @@ body{
         margin-top: 10px;
         border-radius: 5px;
         color: #000;
-        
-        
 }
 
 #flip:hover, #flip_2:hover {
@@ -28,7 +27,6 @@ body{
     box-shadow: 1px 1px #000;
     background-color: #ccc;
     cursor: pointer;
-
 }
 
 #panel, #panel_2 {
@@ -36,7 +34,7 @@ body{
     padding: 0px;
 }
 
-.dados > .usuario{
+.usuario{
    height: auto;
 }
 
